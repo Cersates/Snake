@@ -1,6 +1,5 @@
 package onpu.oop.kurs.forms;
 
-import onpu.oop.kurs.Main;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,7 +10,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class BackgroundPanel extends JPanel {
-    private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(BackgroundPanel.class);
 
     private String imageName;
 
