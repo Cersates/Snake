@@ -1,23 +1,31 @@
 package onpu.oop.kurs.Food;
 
 import java.awt.*;
+import java.util.Random;
 
-public abstract class Food {
+public class Food {
 
-//    public void putFood(Shape walls2, int wallStep);
-//    public void setLocation(int x, int y);
-
-    protected int points = 50;
-    protected Color color;
-    protected int x;
-    protected int y;
-    protected int wallStep;
+    private int points = 50;
+    private Color color = Color.green;
+    private int x;
+    private int y;
+    private int wallStep;
 
     public Food(int wallStep) {
         this.wallStep = wallStep;
     }
 
-    public abstract void putFood(Shape walls2);
+    public void putFood(Shape walls2) {
+        x = 5;
+        y = 5;
+
+        while (walls2.contains(x, y)) {
+            setX(wallStep * new Random().nextInt(40) + 2);
+            setY(wallStep * new Random().nextInt(40) + 2);
+        }
+    }
+
+    ;
 
 
     public void setLocation(int x, int y) {
@@ -53,7 +61,15 @@ public abstract class Food {
         return color;
     }
 
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
     public int getPoints() {
         return points;
+    }
+
+    public void setPoints(int points) {
+        this.points = points;
     }
 }

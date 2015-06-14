@@ -10,17 +10,11 @@ public class Snake {
     public static final int DIR_RIGHT = 2;
     public static final int DIR_DOWN = 3;
     public static final int DIR_LEFT = 4;
-    public static final int SPEED = 210;
 
     private ArrayList<Point> body = new ArrayList<Point>();
     private int bodySize;
     private int direction = DIR_PAUSE;
 
-    /**
-     * @param x0 X-coordinates
-     * @param y0 Y-coordinates
-     * @param size Size of snake
-     */
     Snake(int x0, int y0, int size) {
         bodySize = size;
         int x = x0 * size + 2;
@@ -42,11 +36,6 @@ public class Snake {
         return body;
     }
 
-    /**
-     * Render snake on gameplay window(dialog)
-     *
-     * @param g2 Graphics2D
-     */
     public void paint(Graphics2D g2) {
         for (Point p : body) {
             g2.setColor(Color.blue);
@@ -61,11 +50,6 @@ public class Snake {
         g2.fillArc(p.x + bodySize / 2 - 1, p.y + bodySize / 2 - 1, 2, 2, 0, 360);
     }
 
-    /**
-     * Return new snake position and void checking for self-eating
-     *
-     * @return New snake position
-     */
     public Point move() {
         Point last = body.get(body.size() - 1);
         Point pp = last;
@@ -100,31 +84,14 @@ public class Snake {
         return pp;
     }
 
-    /**
-     * @return time for Thread.sleep
-     * @link SnakeGame#SnakeGame()
-     * @see SnakeGame#SnakeGame
-     */
     public int getSpeed() {
-        return SPEED;
+        return Util.getSpeed();
     }
 
-    /**
-     * Add fruit to snake
-     *
-     * @link SnakeGame#gameCycle()
-     * @see SnakeGame#gameCycle
-     */
     public void expand() {
         body.add(0, new Point(body.get(0).x, body.get(0).y));
     }
 
-    /**
-     * Check self-eating of snake
-     *
-     * @link move
-     * @see move()
-     */
     public void delete() {
         for (int i = 1; i < body.size(); i++) {
             if (body.get(i).equals(body.get(0))) {

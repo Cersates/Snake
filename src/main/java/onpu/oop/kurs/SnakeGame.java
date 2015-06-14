@@ -1,7 +1,6 @@
 package onpu.oop.kurs;
 
 import onpu.oop.kurs.Food.Food;
-import onpu.oop.kurs.Food.impl.Orange;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,18 +23,26 @@ public class SnakeGame extends JPanel {
     private Shape walls2 = new Polygon();
     private Shape walls3 = new Polygon();
     private Snake snake = new Snake(2, 2, WALL_STEP);
-    private Food orange = new Orange(WALL_STEP);////////////////////
-    private Food cherry = new Orange(WALL_STEP);////////////////////
+    private Food orange;
+    private Food cherry;
     private int points = 0;
     private boolean gameOver;
     private int lastPressedKey = 0;
     private String message = null;
-    private String level = "sn1.dat";
+    private String level = null;
 
-    public SnakeGame() {
+    public SnakeGame(String level) {
         super(true);
+        this.level = level;
         Dimension dimensionLevel = getLevel(level);
         LOGGER.info("Load level \"" + level + "\"");
+        LOGGER.info("Selected speed " + Util.getSpeed());
+        orange = new Food(WALL_STEP);
+        cherry = new Food(WALL_STEP);
+        orange.setColor(Color.orange);
+        cherry.setColor(Color.red);
+        orange.setPoints(50);
+        cherry.setPoints(100);
         orange.putFood(walls2);
         cherry.putFood(walls2);
         setPreferredSize(dimensionLevel);
@@ -48,7 +55,7 @@ public class SnakeGame extends JPanel {
                 while (true) {
                     gameCycle();
                     try {
-                        Thread.sleep(300 - snake.getSpeed());
+                        Thread.sleep(500 - snake.getSpeed());
                     } catch (InterruptedException e) {
                     }
                 }
@@ -154,10 +161,10 @@ public class SnakeGame extends JPanel {
         g2.fill(walls2);
 
         g2.setColor(orange.getColor());
-        g2.fillArc(orange.getX(), orange.getY(), WALL_STEP + 10, WALL_STEP + 10, 0, 360);
+        g2.fillArc(orange.getX(), orange.getY(), WALL_STEP, WALL_STEP, 0, 360);
 
         g2.setColor(Color.black);
-        g2.drawArc(orange.getX(), orange.getY(), WALL_STEP + 10, WALL_STEP + 10, 0, 360);
+        g2.drawArc(orange.getX(), orange.getY(), WALL_STEP, WALL_STEP, 0, 360);
 
         g2.setColor(cherry.getColor());
         g2.fillArc(cherry.getX(), cherry.getY(), WALL_STEP, WALL_STEP, 0, 360);
@@ -167,7 +174,11 @@ public class SnakeGame extends JPanel {
 
         snake.paint(g2);
         g2.setColor(Color.black);
-        g2.drawString("Points: " + points, 2, 10);
+
+//        g2.drawString("Points: " + points, 2, 10);
+        Game.dlg.setTitle("Points: " + getPoints());
+
+
         if (message != null) {
             g2.setColor(Color.yellow);
             g2.fillRect(150, 100, 100, 30);

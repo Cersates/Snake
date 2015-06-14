@@ -13,6 +13,8 @@ public class MainMenu extends JFrame {
     private static final Logger LOGGER = LoggerFactory.getLogger(MainMenu.class);
 
     private JButton newGameBtn;
+    private JButton settingsBtn;
+    private JButton resultsBtn;
     private JButton exitBtn;
 
     public MainMenu() {
@@ -28,6 +30,8 @@ public class MainMenu extends JFrame {
         LOGGER.info("Selected background \"snake-300x288.jpg\"");
 
         newGameBtn = new JButton("New game");
+        settingsBtn = new JButton("Settings");
+        resultsBtn = new JButton("Results");
         exitBtn = new JButton("Exit");
 //        newGameBtn.setContentAreaFilled(false);
 //        exitBtn.setContentAreaFilled(false);
@@ -40,6 +44,18 @@ public class MainMenu extends JFrame {
             }
         });
 
+        settingsBtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new Settings().setVisible(true);
+            }
+        });
+
+        resultsBtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.err.println("results");
+            }
+        });
+
         exitBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 System.exit(0);
@@ -49,6 +65,8 @@ public class MainMenu extends JFrame {
 
         contentPane.add(Box.createVerticalStrut(230));
         contentPane.add(newGameBtn);
+        contentPane.add(settingsBtn);
+        contentPane.add(resultsBtn);
         contentPane.add(exitBtn);
         setContentPane(contentPane);
 
