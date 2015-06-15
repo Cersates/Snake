@@ -708,3 +708,106 @@
 2015-06-15 02:10:54 INFO  Game:17 - Run game
 2015-06-15 02:10:54 INFO  SnakeGame:38 - Load level "level-2.lvl"
 2015-06-15 02:10:54 INFO  SnakeGame:39 - Selected speed 400
+2015-06-15 03:13:39 INFO  Main:12 - Start Main class
+2015-06-15 03:13:40 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:13:40 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:13:40 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:21:46 INFO  Main:12 - Start Main class
+2015-06-15 03:21:46 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:21:46 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:21:46 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:22:06 INFO  Main:12 - Start Main class
+2015-06-15 03:22:07 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:22:07 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:22:07 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:30:05 INFO  Main:12 - Start Main class
+2015-06-15 03:30:05 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:30:05 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:30:05 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:38:13 INFO  Main:12 - Start Main class
+2015-06-15 03:38:14 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:38:14 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:38:14 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:38:34 INFO  Game:17 - Run game
+2015-06-15 03:38:35 INFO  SnakeGame:38 - Load level "level-1.lvl"
+2015-06-15 03:38:35 INFO  SnakeGame:39 - Selected speed 400
+2015-06-15 03:41:11 INFO  Main:12 - Start Main class
+2015-06-15 03:41:11 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:41:11 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:41:11 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:41:14 INFO  Game:17 - Run game
+2015-06-15 03:41:14 INFO  SnakeGame:38 - Load level "level-1.lvl"
+2015-06-15 03:41:14 INFO  SnakeGame:39 - Selected speed 400
+2015-06-15 03:44:05 INFO  Main:12 - Start Main class
+2015-06-15 03:44:06 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:44:06 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:44:06 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:44:08 INFO  Game:17 - Run game
+2015-06-15 03:44:09 INFO  SnakeGame:38 - Load level "level-1.lvl"
+2015-06-15 03:44:09 INFO  SnakeGame:39 - Selected speed 400
+2015-06-15 03:44:43 INFO  Main:12 - Start Main class
+2015-06-15 03:44:44 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:44:44 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:44:44 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:44:57 INFO  Game:17 - Run game
+2015-06-15 03:44:58 INFO  SnakeGame:38 - Load level "level-1.lvl"
+2015-06-15 03:44:58 INFO  SnakeGame:39 - Selected speed 400
+2015-06-15 03:46:07 INFO  Main:12 - Start Main class
+2015-06-15 03:46:07 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:46:07 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:46:07 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:46:10 INFO  Game:17 - Run game
+2015-06-15 03:46:10 INFO  SnakeGame:38 - Load level "level-1.lvl"
+2015-06-15 03:46:10 INFO  SnakeGame:39 - Selected speed 400
+2015-06-15 03:46:14 INFO  Game:17 - Run game
+2015-06-15 03:46:14 INFO  SnakeGame:38 - Load level "level-1.lvl"
+2015-06-15 03:46:14 INFO  SnakeGame:39 - Selected speed 400
+2015-06-15 03:46:34 INFO  Main:12 - Start Main class
+2015-06-15 03:46:34 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:46:34 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:46:34 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:46:35 INFO  Game:17 - Run game
+2015-06-15 03:46:36 INFO  SnakeGame:38 - Load level "level-1.lvl"
+2015-06-15 03:46:36 INFO  SnakeGame:39 - Selected speed 400
+2015-06-15 03:46:51 INFO  Main:12 - Start Main class
+2015-06-15 03:46:52 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:46:52 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:46:52 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:46:53 INFO  Game:17 - Run game
+2015-06-15 03:46:54 INFO  SnakeGame:38 - Load level "level-1.lvl"
+2015-06-15 03:46:54 INFO  SnakeGame:39 - Selected speed 400
+2015-06-15 03:47:26 INFO  Main:12 - Start Main class
+2015-06-15 03:47:26 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:47:26 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:47:26 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:47:27 INFO  Game:17 - Run game
+2015-06-15 03:47:28 INFO  SnakeGame:38 - Load level "level-1.lvl"
+2015-06-15 03:47:28 INFO  SnakeGame:39 - Selected speed 400
+2015-06-15 03:48:10 INFO  Main:12 - Start Main class
+2015-06-15 03:48:10 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:48:10 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:48:10 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:48:12 INFO  Game:17 - Run game
+2015-06-15 03:48:12 INFO  SnakeGame:38 - Load level "level-1.lvl"
+2015-06-15 03:48:12 INFO  SnakeGame:39 - Selected speed 400
+2015-06-15 03:48:40 INFO  Main:12 - Start Main class
+2015-06-15 03:48:41 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:48:41 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:48:41 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:48:46 INFO  Main:12 - Start Main class
+2015-06-15 03:48:47 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:48:47 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:48:47 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:48:48 INFO  Game:17 - Run game
+2015-06-15 03:48:49 INFO  SnakeGame:38 - Load level "level-1.lvl"
+2015-06-15 03:48:49 INFO  SnakeGame:39 - Selected speed 400
+2015-06-15 03:49:06 INFO  Game:17 - Run game
+2015-06-15 03:49:06 INFO  SnakeGame:38 - Load level "level-2.lvl"
+2015-06-15 03:49:06 INFO  SnakeGame:39 - Selected speed 111
+2015-06-15 03:49:20 INFO  Main:12 - Start Main class
+2015-06-15 03:49:20 INFO  MainMenu:26 - Create main menu of game
+2015-06-15 03:49:20 INFO  BackgroundPanel:19 - Create panel with background "img/snake-300x288.jpg"
+2015-06-15 03:49:20 INFO  MainMenu:30 - Selected background "snake-300x288.jpg"
+2015-06-15 03:49:27 INFO  Game:17 - Run game
+2015-06-15 03:49:27 INFO  SnakeGame:38 - Load level "level-2.lvl"
+2015-06-15 03:49:27 INFO  SnakeGame:39 - Selected speed 114

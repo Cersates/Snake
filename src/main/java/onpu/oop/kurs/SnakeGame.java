@@ -57,6 +57,7 @@ public class SnakeGame extends JPanel {
                     try {
                         Thread.sleep(500 - snake.getSpeed());
                     } catch (InterruptedException e) {
+                        System.err.println("Error in thread");
                     }
                 }
             }
@@ -79,7 +80,7 @@ public class SnakeGame extends JPanel {
         try {
             File file = new File(fileName);
             input = new BufferedReader(new FileReader(file));
-            String line = null;
+            String line;
 
             for (int y = 0; (line = input.readLine()) != null; y++) {
                 for (int x = 0; x < line.length(); x++) {
@@ -109,8 +110,8 @@ public class SnakeGame extends JPanel {
         walls1 = w1;
         walls2 = w2;
         walls3 = w3;
-        Dimension d = new Dimension(maxX - minX, maxY - minY);
-        return d;
+
+        return new Dimension(maxX - minX, maxY - minY);
     }
 
     public void gameCycle() {
@@ -134,7 +135,8 @@ public class SnakeGame extends JPanel {
                 gameOver = true;
             }
             snake.setDirection(Snake.DIR_PAUSE);
-            setMessage("Game over!");
+            setMessage("Game over! Your result = " + getPoints());
+
         }
         this.repaint();
     }
@@ -181,9 +183,9 @@ public class SnakeGame extends JPanel {
 
         if (message != null) {
             g2.setColor(Color.yellow);
-            g2.fillRect(150, 100, 100, 30);
+            g2.fillRect(150, 100, 210, 30);
             g2.setColor(Color.black);
-            g2.drawRect(150, 100, 100, 30);
+            g2.drawRect(150, 100, 210, 30);
             g2.drawString(message, 160, 120);
         }
     }
