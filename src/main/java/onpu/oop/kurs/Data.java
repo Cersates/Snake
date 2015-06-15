@@ -1,6 +1,6 @@
 package onpu.oop.kurs;
 
-public class Util {
+public class Data {
     private static int speed = 400;
     private static String startLevel = "level-1.lvl";
 
@@ -9,7 +9,7 @@ public class Util {
     }
 
     public static void setSpeed(int speed) {
-        Util.speed = speed;
+        Data.speed = speed;
     }
 
     public static String getStartLevel() {
@@ -17,6 +17,6 @@ public class Util {
     }
 
     public static void setStartLevel(String startLevel) {
-        Util.startLevel = startLevel;
+        Data.startLevel = startLevel;
     }
 }

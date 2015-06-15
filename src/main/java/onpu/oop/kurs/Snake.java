@@ -85,7 +85,7 @@ public class Snake {
     }
 
     public int getSpeed() {
-        return Util.getSpeed();
+        return Data.getSpeed();
     }
 
     public void expand() {

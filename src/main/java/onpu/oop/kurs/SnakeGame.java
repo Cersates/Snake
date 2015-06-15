@@ -25,6 +25,7 @@ public class SnakeGame extends JPanel {
     private Snake snake = new Snake(2, 2, WALL_STEP);
     private Food orange;
     private Food cherry;
+    private Food bomb;
     private int points = 0;
     private boolean gameOver;
     private int lastPressedKey = 0;
@@ -36,15 +37,24 @@ public class SnakeGame extends JPanel {
         this.level = level;
         Dimension dimensionLevel = getLevel(level);
         LOGGER.info("Load level \"" + level + "\"");
-        LOGGER.info("Selected speed " + Util.getSpeed());
+        LOGGER.info("Selected speed " + Data.getSpeed());
+
         orange = new Food(WALL_STEP);
         cherry = new Food(WALL_STEP);
+        bomb = new Food(WALL_STEP);
+
         orange.setColor(Color.orange);
-        cherry.setColor(Color.red);
         orange.setPoints(50);
-        cherry.setPoints(100);
         orange.putFood(walls2);
+
+        cherry.setColor(Color.red);
+        cherry.setPoints(100);
         cherry.putFood(walls2);
+
+        bomb.setColor(Color.lightGray);
+        bomb.setPoints(0);
+        bomb.putFood(walls2);
+
         setPreferredSize(dimensionLevel);
         setMinimumSize(dimensionLevel);
         setMaximumSize(dimensionLevel);
@@ -129,15 +139,15 @@ public class SnakeGame extends JPanel {
             snake.expand();
             cherry.putFood(walls2);
         }
-        if (walls2.contains(p)) {
+        if ((walls2.contains(p)) || (p.x == bomb.getX() && p.y == bomb.getY())) {
             if (snake.getDirection() != Snake.DIR_PAUSE) {
                 points -= 50;
                 gameOver = true;
             }
             snake.setDirection(Snake.DIR_PAUSE);
             setMessage("Game over! Your result = " + getPoints());
-
         }
+
         this.repaint();
     }
 
@@ -155,24 +165,23 @@ public class SnakeGame extends JPanel {
 
         g2.setColor(Color.gray);
         g2.fill(walls3);
-
         g2.setColor(Color.lightGray);
         g2.fill(walls1);
-
         g2.setColor(Color.black);
         g2.fill(walls2);
 
         g2.setColor(orange.getColor());
         g2.fillArc(orange.getX(), orange.getY(), WALL_STEP, WALL_STEP, 0, 360);
-
         g2.setColor(Color.black);
         g2.drawArc(orange.getX(), orange.getY(), WALL_STEP, WALL_STEP, 0, 360);
 
         g2.setColor(cherry.getColor());
         g2.fillArc(cherry.getX(), cherry.getY(), WALL_STEP, WALL_STEP, 0, 360);
-
         g2.setColor(Color.black);
         g2.drawArc(cherry.getX(), cherry.getY(), WALL_STEP, WALL_STEP, 0, 360);
+
+        g2.setColor(bomb.getColor());
+        g2.fillArc(bomb.getX(), bomb.getY(), WALL_STEP, WALL_STEP, 0, 360);
 
         snake.paint(g2);
         g2.setColor(Color.black);

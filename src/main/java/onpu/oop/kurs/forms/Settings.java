@@ -1,6 +1,6 @@
 package onpu.oop.kurs.forms;
 
-import onpu.oop.kurs.Util;
+import onpu.oop.kurs.Data;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -39,8 +39,8 @@ public class Settings extends JFrame {
         ok.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Util.setSpeed(slider.getValue());
-                Util.setStartLevel(levelComboBox.getSelectedItem().toString());
+                Data.setSpeed(slider.getValue());
+                Data.setStartLevel(levelComboBox.getSelectedItem().toString());
                 dispose();
             }
         });

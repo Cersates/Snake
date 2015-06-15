@@ -19,7 +19,7 @@ public class Game {
         dlg.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         dlg.setResizable(false);
 
-        snakeGame = new SnakeGame(Util.getStartLevel());
+        snakeGame = new SnakeGame(Data.getStartLevel());
         dlg.getContentPane().add(snakeGame);
         snakeGame.newGame();
         dlg.addKeyListener(new KeyAdapter() {
